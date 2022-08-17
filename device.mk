@@ -115,7 +115,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@6.0-impl:32 \
     android.hardware.audio.service \
     android.hardware.soundtrigger@2.1-impl:32 \
-    audio.a2dp.default \
     audio.r_submix.default \
     audio.usb.default \
     libqcompostprocbundle \
@@ -124,6 +123,7 @@ PRODUCT_PACKAGES += \
     libtinycompress \
     libvolumelistener \
     tinymix
+#    audio.a2dp.default
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
