@@ -23,14 +23,35 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 $(call inherit-product, device/asus/Z01R/device.mk)
 
 # Inherit some common Evo stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+RICE_MAINTAINER := JuanTamadski
+RICE_CHIPSET := SD8gen1
+WITH_GMS := true
+SUSHI_BOOTANIMATION := 1080
+TARGET_BUILD_GRAPHENEOS_CAMERA := true
+TARGET_ENABLE_BLUR := true
+TARGET_HAS_UDFPS := false
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.sys.fw.bg_apps_limit?=48 \
+    persist.sys.fw.use_trim_settings?=true \
+    persist.sys.fw.empty_app_percent?=50 \
+    persist.sys.fw.trim_empty_percent?=100 \
+    persist.sys.fw.trim_cache_percent?=100 \
+    persist.sys.fw.trim_enable_memory?=2147483648 \
+    persist.sys.fw.bservice_age?=120000 \
+    persist.sys.fw.bservice_limit?=6 \
+    persist.sys.fw.bservice_enable?=true 
 
 PRODUCT_BRAND := asus
 PRODUCT_DEVICE := Z01R
 PRODUCT_MANUFACTURER := asus
 PRODUCT_MODEL := Zenfone 5Z
-PRODUCT_NAME := evolution_Z01R
-EVO_BUILD_TYPE := OFFICIAL
+PRODUCT_NAME := lineage_Z01R
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
