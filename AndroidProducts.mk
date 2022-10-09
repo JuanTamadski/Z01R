@@ -19,5 +19,5 @@ PRODUCT_MAKEFILES := \
 
 COMMON_LUNCH_CHOICES := \
     spark_Z01R-user \
-    spark_userdebug \
-    spark_eng
+    spark_Z01R-userdebug \
+    spark_Z01R-eng
