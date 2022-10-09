@@ -166,4 +166,4 @@ vendor.usb.use_ffs_mtp=0
 ro.vendor.qti.va_aosp.support=1
 
 # Maintainer
-ro.spark.maintainer=JuanTamadski(Eh_paano_kung)
+ro.spark.maintainer=JuanTamadski
