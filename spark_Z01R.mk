@@ -25,6 +25,9 @@ $(call inherit-product, device/asus/Z01R/device.mk)
 # Inherit some common Evo stuff.
 $(call inherit-product, vendor/spark/config/common_full_phone.mk)
 
+
+PRODUCT_BOARD_PLATFORM := sdm845
+PRODUCT_USES_QCOM_HARDWARE := true
 PRODUCT_BRAND := asus
 PRODUCT_DEVICE := Z01R
 PRODUCT_MANUFACTURER := asus
@@ -35,6 +38,8 @@ PRODUCT_GMS_CLIENTID_BASE := android-asus
 
 TARGET_VENDOR_PRODUCT_NAME := Z01R
 TARGET_VENDOR_DEVICE_NAME := Z01R
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_USES_BLUR := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=ASUS_Z01R_1 \
